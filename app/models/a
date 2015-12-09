@@ -1,0 +1,8 @@
+meetup_1 = Meetup.create(title: "JavaScript", description: "I like JS", city: "Boston",
+user: user_1)
+meetup_2 = Meetup.create(title: "Ruby", description: "I lova Ruby", city: "Quincy", membership: membership)
+
+user_1 = User.create(provider: "Tim", uid: "1qaz", username: "tobara", email: "t@tim.com", avatar_url: "h1")
+user_2 = User.create(provider: "Meder", uid: "poiu", username: "mtok", email: "m@tok.com", avatar_url: "g3", membership: membership)
+
+membership_1 = Membership.create(meetup: meetup_1, user: user_1)
